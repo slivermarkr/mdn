@@ -36,6 +36,8 @@
     <button>Display message box</button>
 
     <script>
+      const btn = document.querySelector("button");
+      btn.addEventListener("click", displayMessage);
       function displayMessage() {
         const body = document.body;
 
@@ -54,6 +56,7 @@
         closeBtn.addEventListener("click", () =>
         panel.parentNode.removeChild(panel),)
       };
+      
 
     </script>
   </body>
