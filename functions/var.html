@@ -19,15 +19,19 @@
 <body>
     <button id="button_A">Press me</button>
     <h3 id="heading_A"></h3>
+    <button id="button_B">Press me</button>
+    <h3 id="heading_B"></h3>
     <script>
         const buttonA = document.querySelector("#button_A");
         const headingA = document.querySelector("#heading_A");
 
         buttonA.onclick = () => {
-            const name = prompt("What i syour name?");
+            const name = prompt("What is your name?");
             alert(`Hello ${name}, nice to meet you!`);
             headingA.textContent = `Welcome ${name}`;
         }
+
+   
     </script>
 </body>
 </html>
