@@ -1,0 +1,21 @@
+<script>
+    function power(x, y){
+
+        result = x;
+
+        for(let i = 1; i < y; i++){
+            result *= x;
+        }
+        return result;
+    }
+
+    let x = prompt("First #:" ,);
+    let y = prompt("Second #:", );
+
+    if(y < 1) {
+        alert(`Power ${n} is not supported, use positive value.`)
+    } else {
+         alert(power(x,y));
+    }
+   
+</script>
