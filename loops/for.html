@@ -1,8 +1,29 @@
-<script>
-    const cats = ["Leopard", "Serval", "Jaguar", "Tiger", "Caracal", "Lion"
-    ];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="calculate">Calculate</button>
+    <button id="clear">Clears</button>
+    <pre id="results"></pre>
+    <script>
+        const results = document.querySelector("#results");
 
-    for(const cat of cats) {
-         console.log(cat);
-    }
-</script>
+        function calculate() {
+            for (let i = 1; i < 10; i++) {
+                const newResult = `${i} x ${i} = ${i*i}`;
+                results.textContent += `${newResult}\n`;
+            }
+            results.textContent += "\nFinished!";
+        }
+        const calculateBtn = document.querySelector("#calculate");
+        const clearBtn = document.querySelector("#clear");
+
+        calculateBtn.addEventListener("click", calculate);
+        clearBtn.addEventListener("click", () => (results.textContent = ""));
+    </script>
+</body>
+</html>
