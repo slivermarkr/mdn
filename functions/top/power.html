@@ -1,0 +1,14 @@
+<script>
+    let x = prompt("Enter first number:");
+    let y = prompt("Enter second number:");
+    function returnPow(x , y){
+        if(x < 0 || y < 0)
+        {
+        return ("Error: Please enter a positive integer");
+        }
+        else
+        return x ** y;
+    }
+
+    alert(returnPow(x, y));
+</script>
