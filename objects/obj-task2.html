@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Object basics: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+    let bandInfo;
+   
+    // Add your code here
+    const favBand = {
+        name: "Eraseheads",
+        nationality:"Philippines",
+        genre:"Rock n' Roll",
+        members: 4,
+        formed: 1989,
+        split: 2002,
+        albums: {
+            name: ["UltraElectroMagneticPop","Circus","Cutterpillow","Fruitcake"],
+            released: [1993,1994,1995,1996]
+        },
+    }
+
+    bandInfo = `${favBand.name} is the most successful band in the ${favBand.nationality}. With their ${favBand.genre} personality, the ${favBand.members} members managed to lead the OPM scene from ${favBand.formed} to ${favBand.split}. Their first album titled, "${favBand.albums.name[0]}" was released back in ${favBand.albums.released[0]}`;
+    
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+    let para1 = document.createElement('p');
+    para1.textContent = bandInfo;
+    section.appendChild(para1);
+  </script>
+
+</html>
+
+
