@@ -1,0 +1,18 @@
+<script>
+    const person = {
+        name: ["Sponge", "Bob"],
+        age: 35,
+    };
+    function logProperty(propertyName){
+        console.log(person[propertyName]);
+    }
+    logProperty("name");
+    logProperty("age");
+
+    person["eyes"] = "hazel";
+    person.farewell = function () {
+         console.log("Bye everybody!");
+    };
+
+
+</script>
