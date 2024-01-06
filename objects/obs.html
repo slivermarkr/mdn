@@ -2,6 +2,9 @@
     const person = {
         name: ["Sponge", "Bob"],
         age: 35,
+        introduceSelf() {
+        console.log(`Hi! I'm ${this.name[0]}.`)
+    }
     };
    const myDataName = "height";
    const myDataValue = "1.75";
@@ -11,6 +14,15 @@
     person.farewell = function () {
          console.log("Bye everybody!");
     };
+
+    const person1 = {
+        name: "Moo",
+        introduceSelf(){
+            console.log(`Hi! I'm ${this.name}.`);
+        }
+    }
+
+    
 
 
 </script>
