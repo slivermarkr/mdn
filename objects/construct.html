@@ -1,0 +1,19 @@
+<script>
+    function createPerson(name){
+        const obj = {};
+
+        obj.name = name;
+        obj.introduceSelf = function () {
+            console.log(`Hi! My name is ${this.name}.`);
+        };
+        return obj;
+    }
+
+    const mark = createPerson("Mark");
+    mark.name;
+    mark.introduceSelf();
+
+    const henry = createPerson("Henry");
+    henry.name;
+    henry.introduceSelf();
+</script>
