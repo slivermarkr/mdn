@@ -23,7 +23,7 @@ let insertY = [
 ];
 
 let insertZ = [
-    "spontaneously combuested",
+    "spontaneously combusted",
     "melted into a pudle on the sidewalk",
     "turned into a slug and crawled away"
 ];
@@ -65,3 +65,4 @@ function result() {
   story.textContent = newStory;
   story.style.visibility = 'visible';
 };
+
