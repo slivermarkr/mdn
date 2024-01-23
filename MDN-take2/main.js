@@ -1,0 +1,1 @@
+const myNewNotification = new Notification("hello!");
