@@ -32,19 +32,30 @@
 
         // console.log(bag.appleComputers);
 
-        function makeUser(name, age){
-            return {
-                name: name,
-                age: age,
-            };
-        }
+        // function makeUser(name, age){
+        //     return {
+        //         name: name,
+        //         age: age,
+        //     };
+        // }
 
-        let user = makeUser("Mark",25);
-        user.idAdmin = true;
+        // let user = makeUser("Mark",25);
+        // user.idAdmin = true;
 
 
-        for(let key in user){
-            console.log(`${key}:${user[key]}`);
+        // for(let key in user){
+        //     console.log(`${key}:${user[key]}`);
+        // }
+        let codes = {
+            "+49" : "Germany",
+            "+41" :  "Switzerland",
+            "+44" : "Great Britain",
+            // .. ,
+            "+1" : "USA"
+        };
+
+        for( let code in codes) {
+            alert(code);
         }
     </script>
 </body>
