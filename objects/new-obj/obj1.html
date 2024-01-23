@@ -56,17 +56,40 @@
 
         // for( let code in codes) {
         //     alert(code);
-        // }
-        let user = {};
-        user.name = "Mark";
-        console.log(user.name)
-        user.surname = "Henry";
-        console.log(user.surname)
-        user.name = "SpongeBob";
-        console.log(user.name)
-        delete user.name;
-        console.log(user.name);
+        //  }
 
+        // let user = {};
+        // user.name = "Mark";
+        // console.log(user.name)
+        // user.surname = "Henry";
+        // console.log(user.surname)
+        // user.name = "SpongeBob";
+        // console.log(user.name)
+        // delete user.name;
+        // console.log(user.name);
+
+        // function isEmpty(obj) {
+        //      for(let key in obj){
+        //         return false;
+        //      }
+        //      return true;
+        // }
+
+        let salaries = {
+            John: 100,
+            Ann: 160,
+            Pete: 130
+        }
+        
+        function summa(obj) {
+            let sum = 0;
+            for(let salary in obj){
+                sum += obj[salary];
+            }
+            return sum;
+        }
+
+        
     </script>
 </body>
 </html>
