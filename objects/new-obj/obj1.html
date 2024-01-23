@@ -75,20 +75,33 @@
         //      return true;
         // }
 
-        let salaries = {
-            John: 100,
-            Ann: 160,
-            Pete: 130
-        }
+        // let salaries = {
+        //     John: 100,
+        //     Ann: 160,
+        //     Pete: 130
+        // }
         
-        function summa(obj) {
-            let sum = 0;
-            for(let salary in obj){
-                sum += obj[salary];
-            }
-            return sum;
+        // function summa(obj) {
+        //     let sum = 0;
+        //     for(let salary in obj){
+        //         sum += obj[salary];
+        //     }
+        //     return sum;
+        // }
+
+        let menu = {
+            width: 200,
+            height: 300,
+            title: "my menu"
         }
 
+        function multiplyNumeric(obj){
+            for(let key in obj){
+                if(typeof obj[key] === 'number'){
+                    obj[key] *= 2;
+                }
+            }
+        }
         
     </script>
 </body>
