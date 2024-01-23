@@ -31,13 +31,20 @@
       breed : 'Cymric',
       color : 'white',
       greeting: function() {
-        console.log('Meow!');
+        console.log(`Hello, said ${this.name} the ${this.breed}.`);
       }
     }
 
     // Add your code here
     const catName = cat['name'];
-
+    const cat2 = {
+        name : 'mingming',
+        breed : 'pusakal',
+        color : 'orange',
+        greeting() {
+            console.log(`Hello, said ${this.name} the ${this.breed}.`)
+        }
+    }
 
     // Don't edit the code below here!
 
